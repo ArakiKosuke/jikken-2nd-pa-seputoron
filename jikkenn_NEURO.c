@@ -55,8 +55,7 @@ int main(){
             if(flag != 0){/*学習した後、教師データと照合する*/
                 for(n=0;n<PATTERN;n++){
                     for(m=0;m<NEURO;m++){
-                        z[m] = ((double)x1[n] * v1[m]) + ((double)x2[n] * v2[m]\
-) + v3[m];
+                        z[m] = ((double)x1[n] * v1[m]) + ((double)x2[n] * v2[m]) + v3[m];
                         if(j == NEURO-1){
                             z[m] = 1.0;
                         }else if(z[m] >= 0.0){
